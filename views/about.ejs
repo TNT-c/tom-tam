@@ -8,11 +8,38 @@
   <body>
 
     <div id=#wrapper>
-      <% include partials/nav.ejs %>
-      <a href="/about">about</a>
-      <h1><%= title %></h1>
-      <p>About page</p>
-    </div>
+      <div class="container-fluid">
+        <% include partials/nav.ejs %>
 
+        <div class="iceland">
+          <img src="/images/Iceland2.jpg">
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-9">
+
+              <div id="about">
+                <h2>About me</h2>
+                <blockquote class="blockquote">
+                  <p>Hi I'm Tom, and I'm studying full stack web development. I currently live in South Windsor, CT. Most recently I've visited Iceland in March. That's where the picture of this stunning banner came from. It was taken on top of Vatnajökull National Park where my group hiked way above sea level.</p>
+                  <p>Traveling allows me to sample different types of food. I get the opportunity to taste such diverse ethnic foods. To say the least, I am not a picky eater.</p>
+                  <p>Through web development I hope to gain a valuable skillset that will enable me to pursue a location indepent journey.</p>
+                </blockquote>
+              </div>
+
+              <div class="resume">
+                <a href="public/TomTam_Resume.pdf" target="_blank">Resume PDF</a>
+                <!-- <embed src="/assets/TomTam_Resume.pdf" width="800px" height="2100px" /> -->
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <% include partials/footer.ejs %>
+
+      </div>
+    </div>
+    <!-- end of wrapper div -->
   </body>
 </html>
