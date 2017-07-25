@@ -1,8 +1,112 @@
+/*in header*/
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-a {
-  color: #00B7FF;
+#wrapper {
+  max-width: 2400px;
+}
+
+
+.container-fluid {
+  padding: 0px;
+}
+/*NAV BAR*/
+.navbar {
+  margin-bottom: 0px;
+  padding: 0 4%;
+}
+
+.menu-inline > li {
+  display: inline-block !important;
+}
+
+/*ICELAND BANNER*/
+.iceland {
+  position: relative;
+  margin: 0 0;
+  display: block;
+}
+.iceland img{
+  width: 100%;
+  margin:0 auto;
+}
+
+.index-h1 {
+  text-align: center;
+}
+
+.image-tom {
+  max-width: 20%;
+}
+#headshot {
+  padding-bottom: 1%;
+}
+
+/*CONTACT PAGE*/
+.contact-div {
+  text-align: center;
+  margin-top: 11%;
+}
+
+.contactIcons {
+  padding-left: 1em;
+}
+
+/*ABOUT PAGE*/
+#aboutIceland {
+  position: relative;;
+}
+.tomIceland {
+  max-width: 26%;
+  position: absolute;
+  left:37%;
+  top:2%;
+  border: 1px solid #cbbeb5;
+  box-shadow: 2px 2px 1px #cbbeb5;
+}
+.blockquote p {
+  font-family: 'Fresca', sans-serif;
+}
+#about h2 {
+  font-size: 1.5em;
+}
+.resume {
+  padding-left: 2%;
+  padding-bottom: 6%;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 701px){
+  #phone {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 700px){
+  .tomIceland {
+    max-width: 27%;
+    position: absolute;
+    left:39%;
+    top:0;
+    border: 1px solid #cbbeb5;
+    box-shadow: 1px 1px 1px #cbbeb5;
+  }
+  .contact-div {
+    text-align: center;
+    margin-top: 20%;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  .contact-div {
+    text-align: center;
+    margin-top: 20%;
+  }
+  .contactIcons {
+    padding-left: .3em;
+  }
 }
