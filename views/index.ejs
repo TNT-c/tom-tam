@@ -6,12 +6,15 @@
     <% include partials/header.ejs %>
   </head>
   <body>
-    <div id=#wrapper>
-      <% include partials/nav.ejs %>
-      <a href="/about">about</a>
-      <h1><%= title %></h1>
-      <p>Welcome to <%= title %></p>
-    </div>
 
+    <div id=#wrapper>
+      <div class="container-fluid">
+        <% include partials/nav.ejs %>
+        <div class="iceland">
+          <img src="./images/iceland2.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- end of wrapper div -->
   </body>
 </html>
