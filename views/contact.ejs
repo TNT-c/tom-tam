@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <% include partials/header.ejs %>
+  </head>
+  <body>
+
+    <div id=#wrapper>
+      <div class="container-fluid">
+        <% include partials/nav.ejs %>
+        <div>
+          <div class="container-fluid">
+
+            <div class="contact-div">
+              <!-- set up icons for email, facebook, linkedin -->
+              <a href="https://www.linkedin.com/in/tom-tam-94789219/" title="linkedin" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+              <a href="mailto:tomtam6@gmail.com" title="email" target="_blank"><i class="fa fa-envelope fa-4x contactIcons" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/tom.tam.3720" title="facebook" target="_blank"><i class="fa fa-facebook fa-5x contactIcons" aria-hidden="true"></i></a>
+              <a id="phone" href="tel:6463449025" title="call"><i class="fa fa-phone-square fa-4x contactIcons" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <% include partials/footer.ejs %>    
